@@ -1,0 +1,20 @@
+# GrowthOS AI — backend dependencies (mandatory hackathon stack)
+# Target interpreter: Python 3.11
+# SQLite is provided by the Python standard library (sqlite3). No ORM.
+
+# Web API
+fastapi>=0.115.0,<0.120.0
+uvicorn[standard]>=0.32.0,<0.35.0
+pydantic>=2.9.0,<3.0.0
+pydantic-settings>=2.6.0,<3.0.0
+python-dotenv>=1.0.1,<2.0.0
+httpx>=0.27.0,<0.29.0
+
+# Google Gemini via LangChain / LangGraph (services wired in later steps)
+langchain>=0.3.14,<0.4.0
+langchain-google-genai>=2.0.8,<3.0.0
+langgraph>=0.2.60,<0.3.0
+
+# Vector memory / embeddings helpers (FAISS service wired in later steps)
+faiss-cpu>=1.8.0,<1.12.0
+numpy>=1.26.0,<2.2.0

@@ -1,0 +1,2004 @@
+[
+  {
+    "catalog_id": "mdn-js-first-steps",
+    "title": "JavaScript First Steps",
+    "source": "MDN",
+    "resource_type": "documentation",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps",
+    "description": "Official MDN introduction to JavaScript fundamentals for absolute beginners.",
+    "topics": [
+      "programming",
+      "javascript",
+      "web development"
+    ],
+    "skills": [
+      "javascript basics",
+      "variables",
+      "functions"
+    ],
+    "difficulty": "beginner",
+    "estimated_duration_minutes": 45,
+    "supported_formats": [
+      "read",
+      "article"
+    ],
+    "language": "en",
+    "is_free": true,
+    "requires_account": false,
+    "suitable_moods": [
+      "focused",
+      "curious",
+      "motivated"
+    ],
+    "suitable_energy_levels": [
+      "medium",
+      "high"
+    ],
+    "metadata": {
+      "area": "programming"
+    }
+  },
+  {
+    "catalog_id": "mdn-html-intro",
+    "title": "Getting Started with HTML",
+    "source": "MDN",
+    "resource_type": "documentation",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started",
+    "description": "MDN guide to HTML structure, elements, and first web pages.",
+    "topics": [
+      "programming",
+      "html",
+      "web development"
+    ],
+    "skills": [
+      "html basics",
+      "semantic markup"
+    ],
+    "difficulty": "beginner",
+    "estimated_duration_minutes": 35,
+    "supported_formats": [
+      "read",
+      "article"
+    ],
+    "language": "en",
+    "is_free": true,
+    "requires_account": false,
+    "suitable_moods": [
+      "focused",
+      "curious",
+      "calm"
+    ],
+    "suitable_energy_levels": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "metadata": {
+      "area": "programming"
+    }
+  },
+  {
+    "catalog_id": "mdn-css-first-steps",
+    "title": "CSS First Steps",
+    "source": "MDN",
+    "resource_type": "documentation",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps",
+    "description": "Beginner CSS styling concepts from Mozilla Developer Network.",
+    "topics": [
+      "programming",
+      "css",
+      "web development",
+      "design"
+    ],
+    "skills": [
+      "css basics",
+      "selectors",
+      "box model"
+    ],
+    "difficulty": "beginner",
+    "estimated_duration_minutes": 40,
+    "supported_formats": [
+      "read",
+      "article"
+    ],
+    "language": "en",
+    "is_free": true,
+    "requires_account": false,
+    "suitable_moods": [
+      "focused",
+      "curious"
+    ],
+    "suitable_energy_levels": [
+      "medium",
+      "high"
+    ],
+    "metadata": {
+      "area": "programming"
+    }
+  },
+  {
+    "catalog_id": "fcc-responsive-web",
+    "title": "Responsive Web Design Certification",
+    "source": "freeCodeCamp",
+    "resource_type": "course",
+    "url": "https://www.freecodecamp.org/learn/2022/responsive-web-design/",
+    "description": "Free interactive freeCodeCamp curriculum covering HTML and CSS projects.",
+    "topics": [
+      "programming",
+      "web development",
+      "html",
+      "css"
+    ],
+    "skills": [
+      "html",
+      "css",
+      "responsive design",
+      "projects"
+    ],
+    "difficulty": "beginner",
+    "estimated_duration_minutes": 90,
+    "supported_formats": [
+      "practice",
+      "read",
+      "video"
+    ],
+    "language": "en",
+    "is_free": true,
+    "requires_account": true,
+    "suitable_moods": [
+      "motivated",
+      "focused",
+      "curious"
+    ],
+    "suitable_energy_levels": [
+      "medium",
+      "high"
+    ],
+    "metadata": {
+      "area": "programming",
+      "account_note": "free account recommended for progress saving"
+    }
+  },
+  {
+    "catalog_id": "fcc-js-algorithms",
+    "title": "JavaScript Algorithms and Data Structures",
+    "source": "freeCodeCamp",
+    "resource_type": "course",
+    "url": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/",
+    "description": "Practice JavaScript fundamentals, algorithms, and data structures for free.",
+    "topics": [
+      "programming",
+      "javascript",
+      "algorithms",
+      "interview preparation"
+    ],
+    "skills": [
+      "javascript",
+      "algorithms",
+      "problem solving"
+    ],
+    "difficulty": "intermediate",
+    "estimated_duration_minutes": 75,
+    "supported_formats": [
+      "practice",
+      "read"
+    ],
+    "language": "en",
+    "is_free": true,
+    "requires_account": true,
+    "suitable_moods": [
+      "focused",
+      "motivated"
+    ],
+    "suitable_energy_levels": [
+      "medium",
+      "high"
+    ],
+    "metadata": {
+      "area": "programming"
+    }
+  },
+  {
+    "catalog_id": "gfg-python-basics",
+    "title": "Python Programming Language",
+    "source": "GeeksforGeeks",
+    "resource_type": "article",
+    "url": "https://www.geeksforgeeks.org/python-programming-language-tutorial/",
+    "description": "GeeksforGeeks Python tutorial covering syntax, data types, and core concepts.",
+    "topics": [
+      "programming",
+      "python",
+      "data and AI"
+    ],
+    "skills": [
+      "python basics",
+      "syntax",
+      "data types"
+    ],
+    "difficulty": "beginner",
+    "estimated_duration_minutes": 50,
+    "supported_formats": [
+      "read",
+      "article"
+    ],
+    "language": "en",
+    "is_free": true,
+    "requires_account": false,
+    "suitable_moods": [
+      "curious",
+      "focused",
+      "motivated"
+    ],
+    "suitable_energy_levels": [
+      "medium",
+      "high"
+    ],
+    "metadata": {
+      "area": "programming"
+    }
+  },
+  {
+    "catalog_id": "realpython-start",
+    "title": "Python Basics: Get Started",
+    "source": "Real Python",
+    "resource_type": "article",
+    "url": "https://realpython.com/python-basics/",
+    "description": "Friendly Real Python overview of getting started with Python.",
+    "topics": [
+      "programming",
+      "python"
+    ],
+    "skills": [
+      "python basics",
+      "setup",
+      "syntax"
+    ],
+    "difficulty": "beginner",
+    "estimated_duration_minutes": 30,
+    "supported_formats": [
+      "read",
+      "article"
+    ],
+    "language": "en",
+    "is_free": true,
+    "requires_account": false,
+    "suitable_moods": [
+      "curious",
+      "calm",
+      "focused"
+    ],
+    "suitable_energy_levels": [
+      "low",
+      "medium"
+    ],
+    "metadata": {
+      "area": "programming"
+    }
+  },
+  {
+    "catalog_id": "fcc-web-roadmap",
+    "title": "Web Development Learning Guide",
+    "source": "freeCodeCamp",
+    "resource_type": "article",
+    "url": "https://www.freecodecamp.org/news/what-is-web-development/",
+    "description": "Free overview of what web development involves and how to begin.",
+    "topics": [
+      "programming",
+      "web development",
+      "general learning skills"
+    ],
+    "skills": [
+      "learning path",
+      "html",
+      "css",
+      "javascript"
+    ],
+    "difficulty": "beginner",
+    "estimated_duration_minutes": 20,
+    "supported_formats": [
+      "read",
+      "article"
+    ],
+    "language": "en",
+    "is_free": true,
+    "requires_account": false,
+    "suitable_moods": [
+      "curious",
+      "motivated",
+      "distracted"
+    ],
+    "suitable_energy_levels": [
+      "low",
+      "medium"
+    ],
+    "metadata": {
+      "area": "programming"
+    }
+  },
+  {
+    "catalog_id": "yt-traversymedia-htmlcss",
+    "title": "HTML & CSS Full Course for Beginners",
+    "source": "YouTube",
+    "resource_type": "video",
+    "url": "https://www.youtube.com/watch?v=mU6anWqZJcc",
+    "description": "Long-form free YouTube course introducing HTML and CSS for beginners.",
+    "topics": [
+      "programming",
+      "web development",
+      "html",
+      "css"
+    ],
+    "skills": [
+      "html",
+      "css",
+      "layout"
+    ],
+    "difficulty": "beginner",
+    "estimated_duration_minutes": 120,
+    "supported_formats": [
+      "video",
+      "watch"
+    ],
+    "language": "en",
+    "is_free": true,
+    "requires_account": false,
+    "suitable_moods": [
+      "motivated",
+      "focused",
+      "curious"
+    ],
+    "suitable_energy_levels": [
+      "medium",
+      "high"
+    ],
+    "metadata": {
+      "area": "programming",
+      "channel": "freeCodeCamp.org"
+    }
+  },
+  {
+    "catalog_id": "yt-corey-python",
+    "title": "Python Tutorial for Beginners",
+    "source": "YouTube",
+    "resource_type": "video",
+    "url": "https://www.youtube.com/watch?v=_uQrJ0TkZlc",
+    "description": "Popular free Python beginner tutorial covering core language features.",
+    "topics": [
+      "programming",
+      "python"
+    ],
+    "skills": [
+      "python basics",
+      "functions",
+      "loops"
+    ],
+    "difficulty": "beginner",
+    "estimated_duration_minutes": 60,
+    "supported_formats": [
+      "video",
+      "watch"
+    ],
+    "language": "en",
+    "is_free": true,
+    "requires_account": false,
+    "suitable_moods": [
+      "curious",
+      "motivated",
+      "focused"
+    ],
+    "suitable_energy_levels": [
+      "medium",
+      "high"
+    ],
+    "metadata": {
+      "area": "programming"
+    }
+  },
+  {
+    "catalog_id": "github-awesome-python",
+    "title": "Awesome Python",
+    "source": "GitHub",
+    "resource_type": "repository",
+    "url": "https://github.com/vinta/awesome-python",
+    "description": "Curated list of Python frameworks, libraries, and learning resources.",
+    "topics": [
+      "programming",
+      "python",
+      "general learning skills"
+    ],
+    "skills": [
+      "python ecosystem",
+      "library discovery"
+    ],
+    "difficulty": "intermediate",
+    "estimated_duration_minutes": 25,
+    "supported_formats": [
+      "read",
+      "article"
+    ],
+    "language": "en",
+    "is_free": true,
+    "requires_account": false,
+    "suitable_moods": [
+      "curious",
+      "focused"
+    ],
+    "suitable_energy_levels": [
+      "low",
+      "medium"
+    ],
+    "metadata": {
+      "area": "programming"
+    }
+  },
+  {
+    "catalog_id": "leetcode-explore",
+    "title": "LeetCode Explore",
+    "source": "LeetCode",
+    "resource_type": "practice",
+    "url": "https://leetcode.com/explore/",
+    "description": "Free LeetCode explore tracks for coding interview practice problems.",
+    "topics": [
+      "interview preparation",
+      "algorithms",
+      "programming"
+    ],
+    "skills": [
+      "problem solving",
+      "algorithms",
+      "coding interviews"
+    ],
+    "difficulty": "intermediate",
+    "estimated_duration_minutes": 45,
+    "supported_formats": [
+      "practice"
+    ],
+    "language": "en",
+    "is_free": true,
+    "requires_account": true,
+    "suitable_moods": [
+      "focused",
+      "motivated"
+    ],
+    "suitable_energy_levels": [
+      "medium",
+      "high"
+    ],
+    "metadata": {
+      "area": "interview preparation",
+      "account_note": "free tier problems available"
+    }
+  },
+  {
+    "catalog_id": "hackerrank-python",
+    "title": "HackerRank Python Practice",
+    "source": "HackerRank",
+    "resource_type": "practice",
+    "url": "https://www.hackerrank.com/domains/python",
+    "description": "Free Python practice challenges for syntax and problem-solving drills.",
+    "topics": [
+      "programming",
+      "python",
+      "interview preparation"
+    ],
+    "skills": [
+      "python",
+      "problem solving"
+    ],
+    "difficulty": "beginner",
+    "estimated_duration_minutes": 40,
+    "supported_formats": [
+      "practice"
+    ],
+    "language": "en",
+    "is_free": true,
+    "requires_account": true,
+    "suitable_moods": [
+      "focused",
+      "motivated",
+      "curious"
+    ],
+    "suitable_energy_levels": [
+      "medium",
+      "high"
+    ],
+    "metadata": {
+      "area": "programming"
+    }
+  },
+  {
+    "catalog_id": "kaggle-learn-python",
+    "title": "Kaggle Learn: Python",
+    "source": "Kaggle",
+    "resource_type": "course",
+    "url": "https://www.kaggle.com/learn/python",
+    "description": "Short free micro-course on Python for data work.",
+    "topics": [
+      "data and AI",
+      "python",
+      "programming"
+    ],
+    "skills": [
+      "python",
+      "data analysis basics"
+    ],
+    "difficulty": "beginner",
+    "estimated_duration_minutes": 35,
+    "supported_formats": [
+      "practice",
+      "read"
+    ],
+    "language": "en",
+    "is_free": true,
+    "requires_account": true,
+    "suitable_moods": [
+      "curious",
+      "motivated",
+      "focused"
+    ],
+    "suitable_energy_levels": [
+      "medium",
+      "high"
+    ],
+    "metadata": {
+      "area": "data and AI"
+    }
+  },
+  {
+    "catalog_id": "kaggle-learn-intro-ml",
+    "title": "Kaggle Learn: Intro to Machine Learning",
+    "source": "Kaggle",
+    "resource_type": "course",
+    "url": "https://www.kaggle.com/learn/intro-to-machine-learning",
+    "description": "Hands-on free introduction to machine learning concepts and models.",
+    "topics": [
+      "data and AI",
+      "machine learning"
+    ],
+    "skills": [
+      "machine learning basics",
+      "model training",
+      "validation"
+    ],
+    "difficulty": "intermediate",
+    "estimated_duration_minutes": 50,
+    "supported_formats": [
+      "practice",
+      "read"
+    ],
+    "language": "en",
+    "is_free": true,
+    "requires_account": true,
+    "suitable_moods": [
+      "curious",
+      "focused",
+      "motivated"
+    ],
+    "suitable_energy_levels": [
+      "medium",
+      "high"
+    ],
+    "metadata": {
+      "area": "data and AI"
+    }
+  },
+  {
+    "catalog_id": "arxiv-attention",
+    "title": "Attention Is All You Need",
+    "source": "arXiv",
+    "resource_type": "paper",
+    "url": "https://arxiv.org/abs/1706.03762",
+    "description": "Seminal free research paper introducing the Transformer architecture.",
+    "topics": [
+      "data and AI",
+      "machine learning",
+      "deep learning"
+    ],
+    "skills": [
+      "transformers",
+      "attention mechanism",
+      "research reading"
+    ],
+    "difficulty": "advanced",
+    "estimated_duration_minutes": 60,
+    "supported_formats": [
+      "read",
+      "article"
+    ],
+    "language": "en",
+    "is_free": true,
+    "requires_account": false,
+    "suitable_moods": [
+      "focused",
+      "curious"
+    ],
+    "suitable_energy_levels": [
+      "high"
+    ],
+    "metadata": {
+      "area": "data and AI"
+    }
+  },
+  {
+    "catalog_id": "gfg-ml-intro",
+    "title": "Machine Learning",
+    "source": "GeeksforGeeks",
+    "resource_type": "article",
+    "url": "https://www.geeksforgeeks.org/machine-learning/",
+    "description": "Broad free overview of machine learning concepts and algorithms.",
+    "topics": [
+      "data and AI",
+      "machine learning"
+    ],
+    "skills": [
+      "ml concepts",
+      "supervised learning",
+      "unsupervised learning"
+    ],
+    "difficulty": "intermediate",
+    "estimated_duration_minutes": 40,
+    "supported_formats": [
+      "read",
+      "article"
+    ],
+    "language": "en",
+    "is_free": true,
+    "requires_account": false,
+    "suitable_moods": [
+      "curious",
+      "focused"
+    ],
+    "suitable_energy_levels": [
+      "medium",
+      "high"
+    ],
+    "metadata": {
+      "area": "data and AI"
+    }
+  },
+  {
+    "catalog_id": "yt-3blue1brown-nn",
+    "title": "But what is a neural network?",
+    "source": "YouTube",
+    "resource_type": "video",
+    "url": "https://www.youtube.com/watch?v=aircAruvnKk",
+    "description": "Visual 3Blue1Brown explainer of neural networks for intuitive understanding.",
+    "topics": [
+      "data and AI",
+      "machine learning",
+      "deep learning"
+    ],
+    "skills": [
+      "neural networks",
+      "intuition building"
+    ],
+    "difficulty": "beginner",
+    "estimated_duration_minutes": 20,
+    "supported_formats": [
+      "video",
+      "watch"
+    ],
+    "language": "en",
+    "is_free": true,
+    "requires_account": false,
+    "suitable_moods": [
+      "curious",
+      "motivated",
+      "tired"
+    ],
+    "suitable_energy_levels": [
+      "low",
+      "medium"
+    ],
+    "metadata": {
+      "area": "data and AI"
+    }
+  },
+  {
+    "catalog_id": "yt-tedx-public-speaking",
+    "title": "How to Speak So That People Want to Listen",
+    "source": "YouTube",
+    "resource_type": "video",
+    "url": "https://www.youtube.com/watch?v=eIho2S0ZahI",
+    "description": "Julian Treasure TEDx talk on vocal habits that improve speaking impact.",
+    "topics": [
+      "communication",
+      "public speaking"
+    ],
+    "skills": [
+      "vocal delivery",
+      "clarity",
+      "listening impact"
+    ],
+    "difficulty": "beginner",
+    "estimated_duration_minutes": 10,
+    "supported_formats": [
+      "video",
+      "watch"
+    ],
+    "language": "en",
+    "is_free": true,
+    "requires_account": false,
+    "suitable_moods": [
+      "motivated",
+      "curious",
+      "calm",
+      "tired"
+    ],
+    "suitable_energy_levels": [
+      "low",
+      "medium"
+    ],
+    "metadata": {
+      "area": "communication"
+    }
+  },
+  {
+    "catalog_id": "yt-toastmasters-basics",
+    "title": "Public Speaking For Beginners",
+    "source": "YouTube",
+    "resource_type": "video",
+    "url": "https://www.youtube.com/watch?v=i5mYphUoOTs",
+    "description": "Beginner-friendly public speaking tips covering structure and confidence.",
+    "topics": [
+      "communication",
+      "public speaking"
+    ],
+    "skills": [
+      "speech structure",
+      "confidence",
+      "delivery"
+    ],
+    "difficulty": "beginner",
+    "estimated_duration_minutes": 15,
+    "supported_formats": [
+      "video",
+      "watch"
+    ],
+    "language": "en",
+    "is_free": true,
+    "requires_account": false,
+    "suitable_moods": [
+      "motivated",
+      "curious",
+      "stressed"
+    ],
+    "suitable_energy_levels": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "metadata": {
+      "area": "communication"
+    }
+  },
+  {
+    "catalog_id": "fcc-public-speaking-devs",
+    "title": "Public Speaking Tips for Developers",
+    "source": "freeCodeCamp",
+    "resource_type": "article",
+    "url": "https://www.freecodecamp.org/news/public-speaking-for-developers/",
+    "description": "Free practical speaking advice for technical presenters.",
+    "topics": [
+      "communication",
+      "public speaking",
+      "programming"
+    ],
+    "skills": [
+      "technical talks",
+      "presentation planning"
+    ],
+    "difficulty": "intermediate",
+    "estimated_duration_minutes": 12,
+    "supported_formats": [
+      "read",
+      "article"
+    ],
+    "language": "en",
+    "is_free": true,
+    "requires_account": false,
+    "suitable_moods": [
+      "curious",
+      "motivated",
+      "calm"
+    ],
+    "suitable_energy_levels": [
+      "low",
+      "medium"
+    ],
+    "metadata": {
+      "area": "communication"
+    }
+  },
+  {
+    "catalog_id": "spotify-ted-radio-hour",
+    "title": "TED Radio Hour",
+    "source": "Spotify",
+    "resource_type": "podcast",
+    "url": "https://open.spotify.com/show/1VXcJGZyaV8Ibak9b7XyVs",
+    "description": "Public Spotify podcast exploring ideas across learning, leadership, and creativity.",
+    "topics": [
+      "leadership",
+      "productivity",
+      "general learning skills"
+    ],
+    "skills": [
+      "idea synthesis",
+      "reflective listening"
+    ],
+    "difficulty": "beginner",
+    "estimated_duration_minutes": 40,
+    "supported_formats": [
+      "listen",
+      "podcast"
+    ],
+    "language": "en",
+    "is_free": true,
+    "requires_account": false,
+    "suitable_moods": [
+      "curious",
+      "calm",
+      "tired",
+      "distracted"
+    ],
+    "suitable_energy_levels": [
+      "low",
+      "medium"
+    ],
+    "metadata": {
+      "area": "leadership",
+      "account_note": "Spotify free tier may include ads"
+    }
+  },
+  {
+    "catalog_id": "fcc-deep-work-habits",
+    "title": "How to Stay Focused While Learning to Code",
+    "source": "freeCodeCamp",
+    "resource_type": "article",
+    "url": "https://www.freecodecamp.org/news/how-to-stay-focused-while-learning-to-code/",
+    "description": "Free freeCodeCamp article on focus habits for learners and builders.",
+    "topics": [
+      "productivity",
+      "general learning skills",
+      "programming"
+    ],
+    "skills": [
+      "focus",
+      "distraction management",
+      "deep work"
+    ],
+    "difficulty": "beginner",
+    "estimated_duration_minutes": 12,
+    "supported_formats": [
+      "read",
+      "article"
+    ],
+    "language": "en",
+    "is_free": true,
+    "requires_account": false,
+    "suitable_moods": [
+      "focused",
+      "stressed",
+      "distracted"
+    ],
+    "suitable_energy_levels": [
+      "medium",
+      "high"
+    ],
+    "metadata": {
+      "area": "productivity"
+    }
+  },
+  {
+    "catalog_id": "gfg-pomodoro",
+    "title": "Pomodoro Technique",
+    "source": "GeeksforGeeks",
+    "resource_type": "article",
+    "url": "https://www.geeksforgeeks.org/pomodoro-technique/",
+    "description": "Clear free explanation of Pomodoro-based focus sessions.",
+    "topics": [
+      "productivity",
+      "general learning skills"
+    ],
+    "skills": [
+      "timeboxing",
+      "focus sessions"
+    ],
+    "difficulty": "beginner",
+    "estimated_duration_minutes": 10,
+    "supported_formats": [
+      "read",
+      "article"
+    ],
+    "language": "en",
+    "is_free": true,
+    "requires_account": false,
+    "suitable_moods": [
+      "distracted",
+      "tired",
+      "stressed",
+      "motivated"
+    ],
+    "suitable_energy_levels": [
+      "low",
+      "medium"
+    ],
+    "metadata": {
+      "area": "productivity"
+    }
+  },
+  {
+    "catalog_id": "gfg-time-management",
+    "title": "Time Management Tips for Students and Professionals",
+    "source": "GeeksforGeeks",
+    "resource_type": "article",
+    "url": "https://www.geeksforgeeks.org/time-management-tips/",
+    "description": "Straightforward free tips for planning and prioritizing learning time.",
+    "topics": [
+      "productivity",
+      "general learning skills"
+    ],
+    "skills": [
+      "prioritization",
+      "planning",
+      "habits"
+    ],
+    "difficulty": "beginner",
+    "estimated_duration_minutes": 12,
+    "supported_formats": [
+      "read",
+      "article"
+    ],
+    "language": "en",
+    "is_free": true,
+    "requires_account": false,
+    "suitable_moods": [
+      "stressed",
+      "distracted",
+      "motivated",
+      "tired"
+    ],
+    "suitable_energy_levels": [
+      "low",
+      "medium"
+    ],
+    "metadata": {
+      "area": "productivity"
+    }
+  },
+  {
+    "catalog_id": "gutenberg-money-getting",
+    "title": "The Art of Money Getting (Project Gutenberg)",
+    "source": "Project Gutenberg",
+    "resource_type": "book",
+    "url": "https://www.gutenberg.org/ebooks/1849",
+    "description": "Public-domain P.T. Barnum guide on thrift, industry, and practical money habits.",
+    "topics": [
+      "finance",
+      "investing",
+      "productivity"
+    ],
+    "skills": [
+      "financial habits",
+      "thrift",
+      "earning principles"
+    ],
+    "difficulty": "beginner",
+    "estimated_duration_minutes": 70,
+    "supported_formats": [
+      "read",
+      "book"
+    ],
+    "language": "en",
+    "is_free": true,
+    "requires_account": false,
+    "suitable_moods": [
+      "curious",
+      "focused",
+      "calm"
+    ],
+    "suitable_energy_levels": [
+      "low",
+      "medium"
+    ],
+    "metadata": {
+      "area": "finance"
+    }
+  },
+  {
+    "catalog_id": "openlibrary-rich-dad",
+    "title": "Personal Finance Reading List on Open Library",
+    "source": "Open Library",
+    "resource_type": "book",
+    "url": "https://openlibrary.org/subjects/personal_finance",
+    "description": "Open Library subject collection for free and borrowable personal finance books.",
+    "topics": [
+      "finance",
+      "investing"
+    ],
+    "skills": [
+      "personal finance",
+      "budgeting",
+      "investing basics"
+    ],
+    "difficulty": "beginner",
+    "estimated_duration_minutes": 60,
+    "supported_formats": [
+      "read",
+      "book"
+    ],
+    "language": "en",
+    "is_free": true,
+    "requires_account": false,
+    "suitable_moods": [
+      "curious",
+      "calm",
+      "focused"
+    ],
+    "suitable_energy_levels": [
+      "low",
+      "medium"
+    ],
+    "metadata": {
+      "area": "finance"
+    }
+  },
+  {
+    "catalog_id": "gutenberg-autobiography-franklin",
+    "title": "Autobiography of Benjamin Franklin",
+    "source": "Project Gutenberg",
+    "resource_type": "book",
+    "url": "https://www.gutenberg.org/ebooks/20203",
+    "description": "Public-domain autobiography with practical lessons on habits and self-improvement.",
+    "topics": [
+      "finance",
+      "leadership",
+      "writing",
+      "productivity"
+    ],
+    "skills": [
+      "habits",
+      "self-improvement",
+      "reading"
+    ],
+    "difficulty": "beginner",
+    "estimated_duration_minutes": 90,
+    "supported_formats": [
+      "read",
+      "book"
+    ],
+    "language": "en",
+    "is_free": true,
+    "requires_account": false,
+    "suitable_moods": [
+      "calm",
+      "curious",
+      "tired"
+    ],
+    "suitable_energy_levels": [
+      "low",
+      "medium"
+    ],
+    "metadata": {
+      "area": "finance"
+    }
+  },
+  {
+    "catalog_id": "google-books-finance",
+    "title": "Google Books: Personal Finance",
+    "source": "Google Books",
+    "resource_type": "book",
+    "url": "https://books.google.com/books?q=personal+finance+basics",
+    "description": "Google Books search surface for free previews on personal finance basics.",
+    "topics": [
+      "finance",
+      "investing"
+    ],
+    "skills": [
+      "financial literacy",
+      "research"
+    ],
+    "difficulty": "beginner",
+    "estimated_duration_minutes": 30,
+    "supported_formats": [
+      "read",
+      "book"
+    ],
+    "language": "en",
+    "is_free": true,
+    "requires_account": false,
+    "suitable_moods": [
+      "curious",
+      "focused"
+    ],
+    "suitable_energy_levels": [
+      "medium"
+    ],
+    "metadata": {
+      "area": "finance"
+    }
+  },
+  {
+    "catalog_id": "mdn-design-a11y",
+    "title": "What is Accessibility?",
+    "source": "MDN",
+    "resource_type": "documentation",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn/Accessibility/What_is_accessibility",
+    "description": "MDN introduction to accessible design principles for inclusive interfaces.",
+    "topics": [
+      "design",
+      "web development",
+      "creativity"
+    ],
+    "skills": [
+      "accessibility",
+      "inclusive design"
+    ],
+    "difficulty": "beginner",
+    "estimated_duration_minutes": 25,
+    "supported_formats": [
+      "read",
+      "article"
+    ],
+    "language": "en",
+    "is_free": true,
+    "requires_account": false,
+    "suitable_moods": [
+      "curious",
+      "focused",
+      "calm"
+    ],
+    "suitable_energy_levels": [
+      "low",
+      "medium"
+    ],
+    "metadata": {
+      "area": "design"
+    }
+  },
+  {
+    "catalog_id": "yt-figma-crash",
+    "title": "Figma UI Design Tutorial",
+    "source": "YouTube",
+    "resource_type": "video",
+    "url": "https://www.youtube.com/watch?v=FTFaQWZBqQ8",
+    "description": "Free beginner Figma tutorial for interface layout and design basics.",
+    "topics": [
+      "design",
+      "creativity",
+      "ui design"
+    ],
+    "skills": [
+      "figma basics",
+      "layout",
+      "visual hierarchy"
+    ],
+    "difficulty": "beginner",
+    "estimated_duration_minutes": 45,
+    "supported_formats": [
+      "video",
+      "watch",
+      "practice"
+    ],
+    "language": "en",
+    "is_free": true,
+    "requires_account": false,
+    "suitable_moods": [
+      "curious",
+      "motivated",
+      "focused"
+    ],
+    "suitable_energy_levels": [
+      "medium",
+      "high"
+    ],
+    "metadata": {
+      "area": "design"
+    }
+  },
+  {
+    "catalog_id": "mdn-css-layout",
+    "title": "CSS Layout",
+    "source": "MDN",
+    "resource_type": "documentation",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout",
+    "description": "MDN module on modern CSS layout techniques for design practice.",
+    "topics": [
+      "design",
+      "css",
+      "web development",
+      "creativity"
+    ],
+    "skills": [
+      "css layout",
+      "visual structure"
+    ],
+    "difficulty": "intermediate",
+    "estimated_duration_minutes": 35,
+    "supported_formats": [
+      "read",
+      "article",
+      "practice"
+    ],
+    "language": "en",
+    "is_free": true,
+    "requires_account": false,
+    "suitable_moods": [
+      "curious",
+      "focused"
+    ],
+    "suitable_energy_levels": [
+      "medium"
+    ],
+    "metadata": {
+      "area": "design"
+    }
+  },
+  {
+    "catalog_id": "gutenberg-writing",
+    "title": "The Elements of Style (Project Gutenberg)",
+    "source": "Project Gutenberg",
+    "resource_type": "book",
+    "url": "https://www.gutenberg.org/ebooks/37134",
+    "description": "Classic public-domain writing guide on clarity and concise prose.",
+    "topics": [
+      "writing",
+      "communication"
+    ],
+    "skills": [
+      "clear writing",
+      "editing",
+      "style"
+    ],
+    "difficulty": "intermediate",
+    "estimated_duration_minutes": 80,
+    "supported_formats": [
+      "read",
+      "book"
+    ],
+    "language": "en",
+    "is_free": true,
+    "requires_account": false,
+    "suitable_moods": [
+      "calm",
+      "focused",
+      "curious"
+    ],
+    "suitable_energy_levels": [
+      "low",
+      "medium"
+    ],
+    "metadata": {
+      "area": "writing"
+    }
+  },
+  {
+    "catalog_id": "fcc-write-more",
+    "title": "How to Write More Effectively",
+    "source": "freeCodeCamp",
+    "resource_type": "article",
+    "url": "https://www.freecodecamp.org/news/technical-writing-for-beginners/",
+    "description": "Free guide that helps learners write clearer explanations and docs.",
+    "topics": [
+      "writing",
+      "communication",
+      "programming"
+    ],
+    "skills": [
+      "writing habit",
+      "clarity",
+      "technical writing"
+    ],
+    "difficulty": "beginner",
+    "estimated_duration_minutes": 18,
+    "supported_formats": [
+      "read",
+      "article"
+    ],
+    "language": "en",
+    "is_free": true,
+    "requires_account": false,
+    "suitable_moods": [
+      "motivated",
+      "curious",
+      "calm"
+    ],
+    "suitable_energy_levels": [
+      "low",
+      "medium"
+    ],
+    "metadata": {
+      "area": "writing"
+    }
+  },
+  {
+    "catalog_id": "mdn-writing-docs",
+    "title": "What is MDN Web Docs style?",
+    "source": "MDN",
+    "resource_type": "documentation",
+    "url": "https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Writing_style_guide",
+    "description": "MDN writing style guide for clear technical documentation.",
+    "topics": [
+      "writing",
+      "programming",
+      "communication"
+    ],
+    "skills": [
+      "technical writing",
+      "documentation",
+      "style"
+    ],
+    "difficulty": "beginner",
+    "estimated_duration_minutes": 20,
+    "supported_formats": [
+      "read",
+      "article"
+    ],
+    "language": "en",
+    "is_free": true,
+    "requires_account": false,
+    "suitable_moods": [
+      "curious",
+      "focused",
+      "calm"
+    ],
+    "suitable_energy_levels": [
+      "low",
+      "medium"
+    ],
+    "metadata": {
+      "area": "writing"
+    }
+  },
+  {
+    "catalog_id": "yt-interview-tips",
+    "title": "Coding Interview Preparation Tips",
+    "source": "YouTube",
+    "resource_type": "video",
+    "url": "https://www.youtube.com/watch?v=Hgij2xmyq84",
+    "description": "Free video guidance on preparing for coding interviews effectively.",
+    "topics": [
+      "interview preparation",
+      "algorithms",
+      "programming"
+    ],
+    "skills": [
+      "interview strategy",
+      "problem solving"
+    ],
+    "difficulty": "intermediate",
+    "estimated_duration_minutes": 25,
+    "supported_formats": [
+      "video",
+      "watch"
+    ],
+    "language": "en",
+    "is_free": true,
+    "requires_account": false,
+    "suitable_moods": [
+      "motivated",
+      "stressed",
+      "focused"
+    ],
+    "suitable_energy_levels": [
+      "medium",
+      "high"
+    ],
+    "metadata": {
+      "area": "interview preparation"
+    }
+  },
+  {
+    "catalog_id": "reddit-cscareerquestions",
+    "title": "r/cscareerquestions Interview Experiences",
+    "source": "Reddit",
+    "resource_type": "discussion",
+    "url": "https://www.reddit.com/r/cscareerquestions/",
+    "description": "Public Reddit community discussions on interview experiences and prep.",
+    "topics": [
+      "interview preparation",
+      "career",
+      "programming"
+    ],
+    "skills": [
+      "interview research",
+      "role exploration"
+    ],
+    "difficulty": "beginner",
+    "estimated_duration_minutes": 20,
+    "supported_formats": [
+      "read",
+      "discussion"
+    ],
+    "language": "en",
+    "is_free": true,
+    "requires_account": false,
+    "suitable_moods": [
+      "curious",
+      "stressed",
+      "motivated"
+    ],
+    "suitable_energy_levels": [
+      "low",
+      "medium"
+    ],
+    "metadata": {
+      "area": "interview preparation"
+    }
+  },
+  {
+    "catalog_id": "github-discussions-interview",
+    "title": "GitHub Discussions: Interview Prep Threads",
+    "source": "GitHub Discussions",
+    "resource_type": "discussion",
+    "url": "https://github.com/orgs/community/discussions",
+    "description": "Public GitHub community discussions useful for learning and Q&A patterns.",
+    "topics": [
+      "interview preparation",
+      "programming",
+      "general learning skills"
+    ],
+    "skills": [
+      "question asking",
+      "community learning"
+    ],
+    "difficulty": "beginner",
+    "estimated_duration_minutes": 20,
+    "supported_formats": [
+      "read",
+      "discussion"
+    ],
+    "language": "en",
+    "is_free": true,
+    "requires_account": false,
+    "suitable_moods": [
+      "curious",
+      "distracted",
+      "calm"
+    ],
+    "suitable_energy_levels": [
+      "low",
+      "medium"
+    ],
+    "metadata": {
+      "area": "interview preparation"
+    }
+  },
+  {
+    "catalog_id": "yt-photography-basics",
+    "title": "Photography Basics for Beginners",
+    "source": "YouTube",
+    "resource_type": "video",
+    "url": "https://www.youtube.com/watch?v=V7VBVTQ65qk",
+    "description": "Free beginner photography overview covering exposure and composition.",
+    "topics": [
+      "photography",
+      "creativity",
+      "design"
+    ],
+    "skills": [
+      "exposure",
+      "composition",
+      "camera basics"
+    ],
+    "difficulty": "beginner",
+    "estimated_duration_minutes": 20,
+    "supported_formats": [
+      "video",
+      "watch"
+    ],
+    "language": "en",
+    "is_free": true,
+    "requires_account": false,
+    "suitable_moods": [
+      "curious",
+      "motivated",
+      "calm"
+    ],
+    "suitable_energy_levels": [
+      "low",
+      "medium"
+    ],
+    "metadata": {
+      "area": "photography"
+    }
+  },
+  {
+    "catalog_id": "reddit-photography",
+    "title": "r/photography Learning Threads",
+    "source": "Reddit",
+    "resource_type": "discussion",
+    "url": "https://www.reddit.com/r/photography/",
+    "description": "Public Reddit community discussions on composition, gear, and practice.",
+    "topics": [
+      "photography",
+      "creativity",
+      "design"
+    ],
+    "skills": [
+      "composition",
+      "critique",
+      "practice planning"
+    ],
+    "difficulty": "beginner",
+    "estimated_duration_minutes": 15,
+    "supported_formats": [
+      "read",
+      "discussion"
+    ],
+    "language": "en",
+    "is_free": true,
+    "requires_account": false,
+    "suitable_moods": [
+      "curious",
+      "calm",
+      "tired"
+    ],
+    "suitable_energy_levels": [
+      "low",
+      "medium"
+    ],
+    "metadata": {
+      "area": "photography"
+    }
+  },
+  {
+    "catalog_id": "openlibrary-photography",
+    "title": "Open Library: Photography Subject",
+    "source": "Open Library",
+    "resource_type": "book",
+    "url": "https://openlibrary.org/subjects/photography",
+    "description": "Browse free and borrowable photography books and primers.",
+    "topics": [
+      "photography",
+      "creativity"
+    ],
+    "skills": [
+      "photographic theory",
+      "practice planning"
+    ],
+    "difficulty": "beginner",
+    "estimated_duration_minutes": 45,
+    "supported_formats": [
+      "read",
+      "book"
+    ],
+    "language": "en",
+    "is_free": true,
+    "requires_account": false,
+    "suitable_moods": [
+      "curious",
+      "calm"
+    ],
+    "suitable_energy_levels": [
+      "low",
+      "medium"
+    ],
+    "metadata": {
+      "area": "photography"
+    }
+  },
+  {
+    "catalog_id": "fcc-learning-how",
+    "title": "How to Learn to Code / Self-Learning Advice",
+    "source": "freeCodeCamp",
+    "resource_type": "article",
+    "url": "https://www.freecodecamp.org/news/how-to-learn-to-code-and-get-a-developer-job-the-definitive-guide/",
+    "description": "Free freeCodeCamp guide on learning strategy and skill-building habits.",
+    "topics": [
+      "general learning skills",
+      "programming",
+      "productivity"
+    ],
+    "skills": [
+      "learning strategy",
+      "practice planning",
+      "goal setting"
+    ],
+    "difficulty": "beginner",
+    "estimated_duration_minutes": 30,
+    "supported_formats": [
+      "read",
+      "article"
+    ],
+    "language": "en",
+    "is_free": true,
+    "requires_account": false,
+    "suitable_moods": [
+      "motivated",
+      "curious",
+      "stressed"
+    ],
+    "suitable_energy_levels": [
+      "medium",
+      "high"
+    ],
+    "metadata": {
+      "area": "general learning skills"
+    }
+  },
+  {
+    "catalog_id": "yt-spaced-repetition",
+    "title": "Spaced Repetition: Learn Anything",
+    "source": "YouTube",
+    "resource_type": "video",
+    "url": "https://www.youtube.com/watch?v=cquvA_IpEsA",
+    "description": "Clear free explainer of spaced repetition for durable learning.",
+    "topics": [
+      "general learning skills",
+      "productivity"
+    ],
+    "skills": [
+      "spaced repetition",
+      "memory techniques"
+    ],
+    "difficulty": "beginner",
+    "estimated_duration_minutes": 12,
+    "supported_formats": [
+      "video",
+      "watch"
+    ],
+    "language": "en",
+    "is_free": true,
+    "requires_account": false,
+    "suitable_moods": [
+      "curious",
+      "tired",
+      "distracted",
+      "motivated"
+    ],
+    "suitable_energy_levels": [
+      "low",
+      "medium"
+    ],
+    "metadata": {
+      "area": "general learning skills"
+    }
+  },
+  {
+    "catalog_id": "reddit-getstudying",
+    "title": "r/GetStudying Community Tips",
+    "source": "Reddit",
+    "resource_type": "discussion",
+    "url": "https://www.reddit.com/r/GetStudying/",
+    "description": "Public Reddit community sharing study routines and accountability ideas.",
+    "topics": [
+      "general learning skills",
+      "productivity"
+    ],
+    "skills": [
+      "study habits",
+      "accountability"
+    ],
+    "difficulty": "beginner",
+    "estimated_duration_minutes": 15,
+    "supported_formats": [
+      "read",
+      "discussion"
+    ],
+    "language": "en",
+    "is_free": true,
+    "requires_account": false,
+    "suitable_moods": [
+      "motivated",
+      "distracted",
+      "stressed",
+      "low_energy"
+    ],
+    "suitable_energy_levels": [
+      "low",
+      "medium"
+    ],
+    "metadata": {
+      "area": "general learning skills"
+    }
+  },
+  {
+    "catalog_id": "spotify-huberman-lab",
+    "title": "Huberman Lab",
+    "source": "Spotify",
+    "resource_type": "podcast",
+    "url": "https://open.spotify.com/show/79CkJF3UJTHFV8Dse3Oy0X",
+    "description": "Public podcast episodes on habits, focus, and evidence-informed self-improvement.",
+    "topics": [
+      "leadership",
+      "productivity",
+      "general learning skills"
+    ],
+    "skills": [
+      "habit design",
+      "focus science"
+    ],
+    "difficulty": "beginner",
+    "estimated_duration_minutes": 45,
+    "supported_formats": [
+      "listen",
+      "podcast"
+    ],
+    "language": "en",
+    "is_free": true,
+    "requires_account": false,
+    "suitable_moods": [
+      "curious",
+      "calm",
+      "tired",
+      "low_energy"
+    ],
+    "suitable_energy_levels": [
+      "low",
+      "medium"
+    ],
+    "metadata": {
+      "area": "leadership"
+    }
+  },
+  {
+    "catalog_id": "yt-leadership-skills",
+    "title": "Leadership Skills Explained",
+    "source": "YouTube",
+    "resource_type": "video",
+    "url": "https://www.youtube.com/watch?v=aGwYtUzMZ9Q",
+    "description": "Concise free overview of practical leadership communication skills.",
+    "topics": [
+      "leadership",
+      "communication",
+      "productivity"
+    ],
+    "skills": [
+      "delegation",
+      "communication",
+      "team leadership"
+    ],
+    "difficulty": "beginner",
+    "estimated_duration_minutes": 15,
+    "supported_formats": [
+      "video",
+      "watch"
+    ],
+    "language": "en",
+    "is_free": true,
+    "requires_account": false,
+    "suitable_moods": [
+      "motivated",
+      "curious",
+      "focused"
+    ],
+    "suitable_energy_levels": [
+      "medium",
+      "high"
+    ],
+    "metadata": {
+      "area": "leadership"
+    }
+  },
+  {
+    "catalog_id": "gfg-system-design",
+    "title": "System Design Tutorial",
+    "source": "GeeksforGeeks",
+    "resource_type": "article",
+    "url": "https://www.geeksforgeeks.org/system-design-tutorial/",
+    "description": "Free GeeksforGeeks tutorial introducing system design interview topics.",
+    "topics": [
+      "interview preparation",
+      "programming",
+      "data and AI"
+    ],
+    "skills": [
+      "system design basics",
+      "scalability concepts"
+    ],
+    "difficulty": "intermediate",
+    "estimated_duration_minutes": 35,
+    "supported_formats": [
+      "read",
+      "article"
+    ],
+    "language": "en",
+    "is_free": true,
+    "requires_account": false,
+    "suitable_moods": [
+      "focused",
+      "curious"
+    ],
+    "suitable_energy_levels": [
+      "medium",
+      "high"
+    ],
+    "metadata": {
+      "area": "interview preparation"
+    }
+  },
+  {
+    "catalog_id": "github-system-design-primer",
+    "title": "System Design Primer",
+    "source": "GitHub",
+    "resource_type": "repository",
+    "url": "https://github.com/donnemartin/system-design-primer",
+    "description": "Widely used free GitHub primer for system design learning and interviews.",
+    "topics": [
+      "interview preparation",
+      "programming"
+    ],
+    "skills": [
+      "system design",
+      "architecture",
+      "interview prep"
+    ],
+    "difficulty": "advanced",
+    "estimated_duration_minutes": 60,
+    "supported_formats": [
+      "read",
+      "practice"
+    ],
+    "language": "en",
+    "is_free": true,
+    "requires_account": false,
+    "suitable_moods": [
+      "focused",
+      "motivated"
+    ],
+    "suitable_energy_levels": [
+      "high"
+    ],
+    "metadata": {
+      "area": "interview preparation"
+    }
+  },
+  {
+    "catalog_id": "realpython-oop",
+    "title": "Object-Oriented Programming in Python",
+    "source": "Real Python",
+    "resource_type": "article",
+    "url": "https://realpython.com/python3-object-oriented-programming/",
+    "description": "Free Real Python tutorial on classes, objects, and OOP patterns.",
+    "topics": [
+      "programming",
+      "python"
+    ],
+    "skills": [
+      "oop",
+      "classes",
+      "python"
+    ],
+    "difficulty": "intermediate",
+    "estimated_duration_minutes": 40,
+    "supported_formats": [
+      "read",
+      "article",
+      "practice"
+    ],
+    "language": "en",
+    "is_free": true,
+    "requires_account": false,
+    "suitable_moods": [
+      "focused",
+      "curious"
+    ],
+    "suitable_energy_levels": [
+      "medium",
+      "high"
+    ],
+    "metadata": {
+      "area": "programming"
+    }
+  },
+  {
+    "catalog_id": "fcc-data-analysis",
+    "title": "Data Analysis with Python",
+    "source": "freeCodeCamp",
+    "resource_type": "course",
+    "url": "https://www.freecodecamp.org/learn/data-analysis-with-python/",
+    "description": "Free curriculum covering pandas-centered data analysis projects.",
+    "topics": [
+      "data and AI",
+      "python",
+      "programming"
+    ],
+    "skills": [
+      "pandas",
+      "data cleaning",
+      "analysis"
+    ],
+    "difficulty": "intermediate",
+    "estimated_duration_minutes": 70,
+    "supported_formats": [
+      "practice",
+      "video",
+      "read"
+    ],
+    "language": "en",
+    "is_free": true,
+    "requires_account": true,
+    "suitable_moods": [
+      "motivated",
+      "focused",
+      "curious"
+    ],
+    "suitable_energy_levels": [
+      "medium",
+      "high"
+    ],
+    "metadata": {
+      "area": "data and AI"
+    }
+  },
+  {
+    "catalog_id": "yt-css-flexbox",
+    "title": "Flexbox CSS In 20 Minutes",
+    "source": "YouTube",
+    "resource_type": "video",
+    "url": "https://www.youtube.com/watch?v=JJSoEo8JSnc",
+    "description": "Short free Flexbox tutorial for practical layout skills.",
+    "topics": [
+      "programming",
+      "css",
+      "web development",
+      "design"
+    ],
+    "skills": [
+      "flexbox",
+      "css layout"
+    ],
+    "difficulty": "beginner",
+    "estimated_duration_minutes": 20,
+    "supported_formats": [
+      "video",
+      "watch",
+      "practice"
+    ],
+    "language": "en",
+    "is_free": true,
+    "requires_account": false,
+    "suitable_moods": [
+      "curious",
+      "motivated",
+      "focused",
+      "tired"
+    ],
+    "suitable_energy_levels": [
+      "low",
+      "medium"
+    ],
+    "metadata": {
+      "area": "programming"
+    }
+  },
+  {
+    "catalog_id": "rss-fcc-news",
+    "title": "freeCodeCamp News RSS",
+    "source": "RSS",
+    "resource_type": "feed",
+    "url": "https://www.freecodecamp.org/news/rss/",
+    "description": "Free RSS feed of freeCodeCamp tutorials across programming and career topics.",
+    "topics": [
+      "programming",
+      "general learning skills",
+      "productivity"
+    ],
+    "skills": [
+      "continuous learning",
+      "tutorial discovery"
+    ],
+    "difficulty": "beginner",
+    "estimated_duration_minutes": 15,
+    "supported_formats": [
+      "read",
+      "article"
+    ],
+    "language": "en",
+    "is_free": true,
+    "requires_account": false,
+    "suitable_moods": [
+      "curious",
+      "distracted",
+      "tired"
+    ],
+    "suitable_energy_levels": [
+      "low",
+      "medium"
+    ],
+    "metadata": {
+      "area": "general learning skills"
+    }
+  }
+]
