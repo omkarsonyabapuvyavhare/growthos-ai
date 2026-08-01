@@ -4,6 +4,9 @@ Application configuration loaded from environment variables.
 Values are read from a local `.env` file when present. Never hardcode API keys.
 """
 
+from __future__ import annotations
+
+import os
 from functools import lru_cache
 from pathlib import Path
 
@@ -13,6 +16,37 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 # Backend package root (growthos-ai/backend). Relative paths resolve here,
 # not from the current terminal working directory.
 BACKEND_ROOT = Path(__file__).resolve().parent
+
+
+def _is_posix_absolute(path_text: str) -> bool:
+    """True for POSIX absolute paths like /tmp/growthos.db (even on Windows)."""
+    return path_text.startswith("/")
+
+
+def _is_windows_absolute(path_text: str) -> bool:
+    """True for Windows drive or UNC absolute paths."""
+    if path_text.startswith("\\\\"):
+        return True
+    return (
+        len(path_text) >= 3
+        and path_text[0].isalpha()
+        and path_text[1] == ":"
+        and path_text[2] in {"/", "\\"}
+    )
+
+
+def _is_absolute_fs_path(path_text: str) -> bool:
+    """
+    Absolute-path check that does not rely on Path.is_absolute().
+
+    On Windows, Path('/tmp/x').is_absolute() is False, which incorrectly
+    joined serverless /tmp paths under BACKEND_ROOT /var/task.
+    """
+    return _is_posix_absolute(path_text) or _is_windows_absolute(path_text)
+
+
+def _running_on_serverless() -> bool:
+    return bool(os.environ.get("VERCEL") or os.environ.get("AWS_LAMBDA_FUNCTION_NAME"))
 
 
 class Settings(BaseSettings):
@@ -69,10 +103,18 @@ class Settings(BaseSettings):
 
     def resolve_path(self, configured: str) -> Path:
         """Resolve a configured filesystem path against the backend root."""
-        path = Path(configured.strip())
-        if not path.is_absolute():
-            path = BACKEND_ROOT / path
-        return path.resolve()
+        raw = configured.strip().strip('"').strip("'")
+        if not raw:
+            raise ValueError("Configured filesystem path is empty")
+
+        # POSIX absolute paths must stay absolute (e.g. /tmp on Vercel).
+        # Do not call Path.is_absolute() — it is False for /tmp on Windows.
+        if _is_posix_absolute(raw):
+            return Path(raw)
+        if _is_windows_absolute(raw):
+            return Path(raw)
+
+        return (BACKEND_ROOT / raw).resolve()
 
     def resolve_sqlite_path(self) -> Path:
         """
@@ -81,16 +123,33 @@ class Settings(BaseSettings):
         Supports forms such as:
         - sqlite:///./growthos.db
         - sqlite:///growthos.db
+        - sqlite:////tmp/growthos.db  →  /tmp/growthos.db
         - sqlite:////C:/absolute/path.db
         - a bare relative/absolute path (fallback)
+
+        Important: sqlite:////tmp/growthos.db must resolve to Path('/tmp/growthos.db'),
+        never /var/task/tmp/growthos.db or a BACKEND_ROOT-prefixed path.
         """
-        url = self.database_url.strip()
-        if url.startswith("sqlite:///"):
+        url = self.database_url.strip().strip('"').strip("'")
+        if url.startswith("sqlite:////"):
+            # Absolute URI: sqlite:////tmp/growthos.db → /tmp/growthos.db
+            raw_path = "/" + url.removeprefix("sqlite:////").lstrip("/")
+        elif url.startswith("sqlite:///"):
             raw_path = url.removeprefix("sqlite:///")
         elif url.startswith("sqlite://"):
             raw_path = url.removeprefix("sqlite://")
         else:
             raw_path = url
+
+        # Common misconfig on Vercel: sqlite:///tmp/foo (3 slashes) → "tmp/foo"
+        # which would land under the read-only /var/task tree. Promote to /tmp.
+        if (
+            _running_on_serverless()
+            and not _is_absolute_fs_path(raw_path)
+            and (raw_path == "tmp" or raw_path.startswith("tmp/") or raw_path.startswith("tmp\\"))
+        ):
+            raw_path = "/" + raw_path.replace("\\", "/")
+
         return self.resolve_path(raw_path)
 
     def resolve_faiss_index_path(self) -> Path:

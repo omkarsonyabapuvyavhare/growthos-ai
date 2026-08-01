@@ -6,7 +6,9 @@ Phase D exposes thin REST routes over completed agents and LangGraph workflows.
 
 from __future__ import annotations
 
+import logging
 from contextlib import asynccontextmanager
+from pathlib import Path
 from typing import AsyncIterator, Optional
 
 from fastapi import FastAPI
@@ -17,6 +19,8 @@ from api.errors import register_exception_handlers
 from api.routers import router
 from config import Settings, get_settings
 from services.database import init_db
+
+logger = logging.getLogger(__name__)
 
 
 def _cors_origins(settings: Settings) -> list[str]:
@@ -65,6 +69,8 @@ def create_app(
     @asynccontextmanager
     async def lifespan(app: FastAPI) -> AsyncIterator[None]:
         db_path = getattr(app.state, "db_path", None) or resolved_settings.resolve_sqlite_path()
+        # No secrets — path only (helps debug Vercel /tmp vs /var/task issues).
+        logger.info("Resolved SQLite path: %s", Path(db_path).as_posix())
         init_db(db_path)
         yield
 

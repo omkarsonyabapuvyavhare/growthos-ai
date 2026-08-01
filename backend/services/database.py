@@ -7,6 +7,7 @@ Uses the Python standard-library sqlite3 module only (no ORM).
 from __future__ import annotations
 
 import json
+import logging
 import sqlite3
 from contextlib import contextmanager
 from datetime import datetime, timezone
@@ -14,6 +15,8 @@ from pathlib import Path
 from typing import Any, Generator, Iterable, Optional, Sequence
 
 from config import Settings, get_settings
+
+logger = logging.getLogger(__name__)
 
 # ---------------------------------------------------------------------------
 # Connection helpers
@@ -32,10 +35,11 @@ def resolve_db_path(settings: Optional[Settings] = None) -> Path:
 
 
 def _ensure_parent_dir(db_path: Path) -> None:
-    """Create the parent directory for the database file when needed."""
+    """Always create the parent directory for the database file when needed."""
     parent = db_path.parent
-    if parent and not parent.exists():
-        parent.mkdir(parents=True, exist_ok=True)
+    if str(parent) in {"", "."}:
+        return
+    parent.mkdir(parents=True, exist_ok=True)
 
 
 @contextmanager
@@ -54,8 +58,11 @@ def get_connection(
     """
     path = db_path or resolve_db_path(settings)
     _ensure_parent_dir(path)
+    # Prefer POSIX form so Vercel logs show /tmp/growthos.db, not a host-skewed path.
+    connect_target = path.as_posix() if path.as_posix().startswith("/") else str(path)
+    logger.info("sqlite3.connect target: %s", connect_target)
 
-    conn = sqlite3.connect(str(path))
+    conn = sqlite3.connect(connect_target)
     conn.row_factory = sqlite3.Row
     try:
         conn.execute("PRAGMA foreign_keys = ON")
