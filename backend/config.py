@@ -46,7 +46,8 @@ class Settings(BaseSettings):
     # SQLite connection string, e.g. sqlite:///./growthos.db
     database_url: str = "sqlite:///./growthos.db"
 
-    # Allowed CORS origin for the Next.js frontend
+    # CORS origins for local Next.js (comma-separated). Same-origin Vercel
+    # production browser calls do not need a production frontend URL here.
     frontend_origin: str = "http://localhost:3000"
 
     # FAISS persistence (relative paths resolve against BACKEND_ROOT)

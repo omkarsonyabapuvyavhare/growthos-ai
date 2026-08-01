@@ -20,11 +20,34 @@ from services.database import init_db
 
 
 def _cors_origins(settings: Settings) -> list[str]:
-    """Support a single origin or comma-separated FRONTEND_ORIGIN values."""
+    """
+    CORS origins for local cross-origin development.
+
+    Same-origin production (browser → `/api/backend` on the same Vercel
+    domain) does not require listing a production frontend URL.
+    """
+    local_defaults = [
+        "http://localhost:3000",
+        "http://localhost:3002",
+        "http://127.0.0.1:3000",
+        "http://127.0.0.1:3002",
+    ]
     raw = (settings.frontend_origin or "").strip()
     if not raw:
-        return ["http://localhost:3000"]
-    return [part.strip() for part in raw.split(",") if part.strip()]
+        return list(local_defaults)
+
+    origins: list[str] = []
+    seen: set[str] = set()
+    for part in raw.split(","):
+        origin = part.strip()
+        if origin and origin not in seen:
+            origins.append(origin)
+            seen.add(origin)
+    for origin in local_defaults:
+        if origin not in seen:
+            origins.append(origin)
+            seen.add(origin)
+    return origins
 
 
 def create_app(

@@ -1,6 +1,9 @@
 /**
  * Typed GrowthOS AI API client.
- * Base URL comes from NEXT_PUBLIC_API_BASE_URL  -  never hardcode in pages.
+ * Base URL comes from NEXT_PUBLIC_API_BASE_URL — never hardcode in pages.
+ *
+ * Local:  NEXT_PUBLIC_API_BASE_URL=http://localhost:8080
+ * Vercel: NEXT_PUBLIC_API_BASE_URL=/api/backend
  */
 
 import type {
@@ -48,10 +51,12 @@ export function getApiBaseUrl(): string {
   const raw = process.env.NEXT_PUBLIC_API_BASE_URL?.trim();
   if (!raw) {
     throw new ApiClientError(
-      "API base URL is not configured. Set NEXT_PUBLIC_API_BASE_URL in .env.local.",
+      "API base URL is not configured. Set NEXT_PUBLIC_API_BASE_URL in .env.local " +
+        "(local: http://localhost:8080) or Vercel (production: /api/backend).",
       0,
     );
   }
+  // Absolute local URL or same-origin relative production path.
   return raw.replace(/\/$/, "");
 }
 

@@ -508,6 +508,19 @@ class ApiTests(unittest.TestCase):
             "distractions": ["phone"],
         }
 
+    def test_cors_keeps_local_origins_without_production_frontend_url(self) -> None:
+        from main import _cors_origins
+
+        local_only = _cors_origins(_settings(self.db_path, frontend_origin=""))
+        self.assertIn("http://localhost:3000", local_only)
+        self.assertIn("http://localhost:3002", local_only)
+
+        with_custom = _cors_origins(
+            _settings(self.db_path, frontend_origin="http://localhost:3002")
+        )
+        self.assertIn("http://localhost:3002", with_custom)
+        self.assertIn("http://localhost:3000", with_custom)
+
     def test_health(self) -> None:
         response = self.client.get("/health")
         self.assertEqual(response.status_code, 200)

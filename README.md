@@ -39,8 +39,10 @@ cp .env.example .env
 | `YOUTUBE_MAX_RESULTS` | Max YouTube search results | `10` |
 | `YOUTUBE_REQUEST_TIMEOUT_SECONDS` | YouTube HTTP timeout | `10` |
 | `DATABASE_URL` | SQLite URL | `sqlite:///./growthos.db` |
-| `FRONTEND_ORIGIN` | CORS origin(s), comma-separated | `http://localhost:3002` |
+| `FRONTEND_ORIGIN` | Local CORS origin(s), comma-separated | `http://localhost:3000,http://localhost:3002` |
 | `FAISS_INDEX_PATH` | FAISS index path | `./data/faiss_index/index.faiss` |
+
+Same-origin Vercel production (browser → `/api/backend`) does **not** require a production frontend URL in `FRONTEND_ORIGIN`.
 
 ### Optional YouTube discovery
 
@@ -59,9 +61,9 @@ cd frontend
 cp .env.local.example .env.local
 ```
 
-| Variable | Description | Local demo example |
-|----------|-------------|--------------------|
-| `NEXT_PUBLIC_API_BASE_URL` | FastAPI base URL | `http://localhost:8080` |
+| Variable | Description | Local | Vercel |
+|----------|-------------|-------|--------|
+| `NEXT_PUBLIC_API_BASE_URL` | FastAPI base URL | `http://localhost:8080` | `/api/backend` |
 
 Do not put Gemini or YouTube keys in the frontend.
 
@@ -184,6 +186,77 @@ npm run dev -- --port 3002
 
 - Local storage holds the MVP user id. Start onboarding again if state was cleared.
 
+## Vercel deployment (Services)
+
+GrowthOS uses [Vercel Services](https://vercel.com/docs/services): a Next.js frontend and a FastAPI backend in one project, configured by root `vercel.json`.
+
+### Production routing
+
+| Public path | Service | Path seen by app code |
+|-------------|---------|------------------------|
+| `/api/backend` and `/api/backend/*` | `backend` (FastAPI) | `/` and `/*` (prefix stripped) |
+| all other paths | `frontend` (Next.js) | unchanged |
+
+Examples:
+
+- `GET /api/backend/health` → FastAPI `/health`
+- `POST /api/backend/onboarding` → FastAPI `/onboarding`
+- `GET /dashboard` → Next.js `/dashboard`
+
+### Dashboard setup
+
+1. Import the `growthos-ai` repository into Vercel.
+2. In **Build and Deployment**, set the framework to **Services** (required when `services` is present in `vercel.json`).
+3. Keep the project root at the repository root (where `vercel.json` lives).
+4. Add environment variables (below) for Production and Preview as needed.
+5. Deploy.
+
+No `pyproject.toml` is required: the backend service uses `backend/main.py` (`main:app`) with `requirements.txt`.
+
+### Environment variables on Vercel
+
+Set these on the **project** (both services can read them; never use `NEXT_PUBLIC_*` for secrets).
+
+**Frontend service / build**
+
+| Variable | Value |
+|----------|--------|
+| `NEXT_PUBLIC_API_BASE_URL` | `/api/backend` |
+
+**Backend service**
+
+| Variable | Required | Notes |
+|----------|----------|--------|
+| `AI_PROVIDER` | yes | `gemini` |
+| `GEMINI_API_KEY` | yes (live AI) | Or `GEMINI_API_KEY_1`…`_4` for rotation |
+| `GEMINI_MODEL` | optional | Default `gemini-flash-latest` |
+| `YOUTUBE_API_ENABLED` | optional | `true` / `false` |
+| `YOUTUBE_API_KEY` | optional | Backend only |
+| `DATABASE_URL` | optional | Default `sqlite:///./growthos.db` |
+| `FRONTEND_ORIGIN` | optional for prod | Local CORS only; same-origin prod does not need it |
+| FAISS / catalog paths | optional | Defaults under `backend/data/` |
+
+Do **not** set `NEXT_PUBLIC_API_BASE_URL` to `http://localhost:…` on Vercel.
+
+### Local vs production API base
+
+```bash
+# Local (.env.local)
+NEXT_PUBLIC_API_BASE_URL=http://localhost:8080
+
+# Vercel
+NEXT_PUBLIC_API_BASE_URL=/api/backend
+```
+
+### Deployment limitations (SQLite + FAISS)
+
+Vercel runs the FastAPI service as a serverless Function. That has important MVP limits:
+
+- **SQLite** on the Function filesystem is **ephemeral** and **not shared** across instances. Data can disappear on cold starts, redeploys, or scale-out. Fine for demos; not durable multi-user production storage.
+- **FAISS** indexes under `backend/data/` are similarly **ephemeral** unless rebuilt each cold start from the seeded catalog / embeddings. Catalog JSON in the repo can be shipped; runtime vector files should not be treated as durable.
+- Long agent runs (demo day-loop) need enough Function time; `vercel.json` sets backend `maxDuration` to **300** seconds.
+- Prefer keeping Gemini and YouTube keys only in Vercel env settings — never in the repo.
+
 ## Testing
 
 ```bash
@@ -202,6 +275,7 @@ npm run build
 
 ```text
 growthos-ai/
+├── vercel.json
 ├── backend/
 │   ├── agents/
 │   ├── api/
