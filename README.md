@@ -197,10 +197,13 @@ GrowthOS uses [Vercel Services](https://vercel.com/docs/services): a Next.js fro
 | `/api/backend` and `/api/backend/*` | `backend` (FastAPI) | `/` and `/*` (prefix stripped) |
 | all other paths | `frontend` (Next.js) | unchanged |
 
+Prefix stripping uses top-level rewrite `request.path` transforms plus backend service rewrites, so FastAPI keeps routes like `/health` (no `/api/backend` prefix in Python).
+
 Examples:
 
 - `GET /api/backend/health` → FastAPI `/health`
 - `POST /api/backend/onboarding` → FastAPI `/onboarding`
+- `GET /api/backend/users/1/dashboard` → FastAPI `/users/1/dashboard`
 - `GET /dashboard` → Next.js `/dashboard`
 
 ### Dashboard setup
